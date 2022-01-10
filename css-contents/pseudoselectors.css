@@ -1,0 +1,42 @@
+body{
+    background-color: chartreuse;
+}
+button{
+   background-color:white;
+   height:50px;
+   width:150px;
+   border-radius: 5px;
+   font-size:20px;
+}
+button:hover{
+    background-color:black;
+    color:white;
+
+}
+a:hover{
+    font-size:xx-large;
+    color:black;
+    background-color: white;
+}
+a:visited{
+    color:red;
+}
+a:link{
+    color:pink;
+
+}
+a:active{
+    color:darkred;
+}
+
+/* p:nth-last-child(2) {
+    background: red;
+  }  */
+
+  /* div p {
+    background-color: yellow;
+  } */
+
+  /* div > p {
+    background-color: yellow;
+  } */

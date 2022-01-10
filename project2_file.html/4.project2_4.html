@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList-UX</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            height: 100%;
+        }
+        #popup{
+            padding-left:33%;
+            padding-top:17%;
+            height:100%;
+            background-image: url(./blur2.PNG);
+            background-size:cover ;    
+        }
+        .box7{
+            border:2px solid red;
+            border-radius: 10px;
+            width:350px;
+            height: 180px;
+            background-color: white;
+            margin-left:9%;
+        }
+        .add1{
+            padding-top: 20px;
+        }
+        .textarea{
+            border:2px solid red;
+            box-sizing:border-box;
+            width:250px;
+            height:40px;
+            border-radius: 5px;
+        }
+        .btn {
+            border:2px solid red;
+            border-radius:15px;
+            color:white;
+            background-color:red;
+            font-size: 16px;
+            cursor: pointer;
+            height:40px;
+            width:60px;
+        }
+    </style>
+</head>
+<body>
+    <div id="popup">
+        <div class="box7">
+            <center><div class="add1" style="color:red;font-weight:bold;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                <label for="new list">Add New Item</label><br><br>
+                <input class="textarea" type="text" name="Add New List"id="new list"/>
+            <br><br>
+                <button class="btn">ADD</button>
+            </div></center>
+        </div>  
+    </div>
+</body>
+</html>

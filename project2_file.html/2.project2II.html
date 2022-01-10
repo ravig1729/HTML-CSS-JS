@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList-UX</title>
+    <style>
+        #header{
+            display:flex;
+            border:1px solid black;
+            height:30px;
+            position:sticky;
+            top:0px;
+            left:0px;
+            margin-top:0px;
+        }
+        .headleft{
+            color:#4d4a42;
+            cursor:pointer;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .headright{
+            color:#4d4a42;
+            cursor:pointer;
+            margin-left: 63%;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        a{
+            text-decoration: none; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+            color: #4d4a42;
+            cursor:pointer;
+        }
+        #flex-container-y{
+            border:1px solid black;
+            width:1212px;
+            padding-bottom:40px;
+            flex-wrap: wrap;
+            overflow:hidden;
+            float:left;
+            height:480px;
+            /* filter:blur(5px); */   
+        }
+        .flex-containerI{
+            margin-top:-5%;
+        }
+        .boxI{
+            font-weight:bolder;
+            font-size:50px;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            padding-top:5%;
+            position:relative;
+        }
+        .heading:before{
+            content:"";
+            display:block;
+            width:120px;
+            height:2px;
+            background:#000;
+            position:absolute;
+            left: 28%;
+            top:80%;
+        }
+        .heading:after{
+            content:"";
+            display:block;
+            width:120px;
+            height:2px;
+            background:#000;
+            position:absolute;
+            right: 28%;
+            top:80%;
+        }
+        .boxII{
+            font-size:x-large;
+            color:#4d4a42;
+            cursor:pointer;
+            margin-left: 45%;
+            margin-top:4%;
+        }
+        .boxIII{
+            border:2px solid red;
+            border-radius:10px;
+            width:300px;
+            height: 300px;
+            margin-top: 40px;
+            box-shadow: 8px 8px 0px lightgrey;
+            flex-wrap: wrap;
+        }
+        .box4-I{
+            color:red;
+            border-bottom: 2px solid black;
+            padding-top: 30px;
+            padding-bottom: 15px;
+            margin-left: 70px;
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            flex-wrap: wrap;
+        }
+        .box4-II{
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-decoration: line-through;
+            text-decoration-color: 2px solid red;
+            padding-top:40px;
+            padding-left: 60px;
+            color:red;
+            flex-wrap: wrap;
+        }
+        .box4-III{
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding-top: 10px;
+            padding-left: 50px;
+            flex-wrap: wrap;
+        }
+        .box4-IV{
+            padding-top: 35%;
+            padding-left:88%;
+            cursor:pointer;
+        }
+        #side{
+            margin-top:-50px;
+            margin-left:96%;
+            padding-left:15px;
+            border:1px solid black;
+            position:sticky;
+            padding-bottom:41.5%;
+            padding-top:20px;
+            margin-top:-0.6px;
+            box-sizing:border-box;
+        }
+        #footer{
+            position:sticky;
+            width:1212.3px;
+            height:27px;
+            margin-top:-29px;
+            display: flex;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .footstart{
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color:#4d4a42;
+            cursor:pointer;  
+        }
+        .footmiddle{
+            position:sticky;
+            border:0px solid white;
+            padding-left:400px;
+        }
+    </style>
+<script src="https://kit.fontawesome.com/58098877f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="headleft">
+            &nbsp <i style="color:#4d4a42;cursor:pointer"class="fas fa-th-large"></i>  TodoList-UX> <b>Todo List View &nbsp| 1366</b>
+        </div>
+        <div class="headright">
+            <label for="field"></label>
+            <select name="course" id="">
+                <option value="Default">Default</option>
+                <option value="25%">25%</option>
+                <option value="50%">50%</option>
+                <option value="75%">75%</option>
+                <option value="100%">100%</option>
+                <option value="150%">150%</option>
+                <option value="200%">200%</option>
+            </select>
+            <i class="fas fa-expand-alt"></i>
+            <i class="fas fa-question-circle"></i>
+            <a href="https://auth.services.adobe.com/en_US/index.html?callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2FCCHomeWeb1%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fcreativecloud.adobe.com%252Fcc%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26code_challenge_method%3Dplain%26use_ms_for_expiry%3Dtrue&client_id=CCHomeWeb1&scope=AdobeID%2Copenid%2Cgnav%2Ccreative_cloud%2Cread_organizations%2Ccreative_sdk%2Cadditional_info.optionalAgreements%2Cadditional_info.screen_name%2Cadditional_info.roles%2Csao.ccprivate%2Ctk_platform%2Cpiip_read&denied_callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fdenied%2FCCHomeWeb1%3Fredirect_uri%3Dhttps%253A%252F%252Fcreativecloud.adobe.com%252Fcc%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26response_type%3Dtoken&relay=394792d0-af3e-4c8c-a781-430401abe083&locale=en_US&flow_type=token&idp_flow_type=login&ab_test=signup-social-round#/" target="_blank">Sign in</a>
+        </div>
+    </div>
+    <div class=header2>
+        <div id="flex-container-y">
+            <div class="flex-containerI">
+                <div class="boxI">
+                    <b class="heading">Trip to Paris</b>
+                </div>
+                <div class="boxII">
+                    <span><a href="1.project2I.html"> <i style="color:red"class="fas fa-arrow-alt-circle-left"></i> </a></span>
+                    <span>Back</span>
+                </div>
+            <center>
+            <div class="boxIII">
+                <div class="box4-I">Trip to Paris</div>
+                <div class="box4-II">Completed Task</div>
+                <div class="box4-III">
+                    <input type="checkbox"name="Check"id="check"/>
+                    <label for="check">Pending Task</label>
+                </div>
+                <div class="box4-IV">
+                    <a href="4.project2_4.html"> <i style="color:red;font-size: x-large;"class="fas fa-plus-circle"></i></a>
+                    <div style="cursor:pointer"></div>
+                </div>
+            </div></center>
+            </div>
+        </div>
+        <div id="side">
+            <i style="color:#4d4a42;cursor:pointer"class="fas fa-comment-alt"></i>
+        </div>
+        </div>
+        <div id="footer">
+            <div class="footstart">
+                <a href="https://www.adobe.com/products/xd.html?sdid=YXPZG4ZY&mv=other" target="_blank">Made with Adobe XD &nbsp  <i class="fas fa-link"></i></a>
+            </div><center>
+            <div class="footmiddle">
+                <a href="1.project2I.html">  <i style="color:#4d4a42;cursor:pointer"class="fas fa-home"></i> </a>&nbsp  < &nbsp  2 of 4 &nbsp>
+            </div></center>
+        </div>
+    </body>
+</html>

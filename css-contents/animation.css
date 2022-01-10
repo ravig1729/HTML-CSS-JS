@@ -1,0 +1,53 @@
+
+h1{
+    color:red;
+    text-align: center;
+    margin-top:100px;
+    animation-name: text-animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+}
+.box{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background-color: crimson;
+    animation-name:box-animation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes text-animation{
+    100%{
+        transform:scale(3,3);
+    }
+}
+/* @keyframes text-animation{
+    40%{
+        transform:scale(3,3);
+    }
+    10%{
+        transform:scale(0.5,0.5) ;
+    }
+} */
+@keyframes box-animation{
+    30%
+    {
+       transform:translate(100px,100px);
+       background-color: cyan;
+    }
+    40%{
+        transform:translate(250px,50px);
+        background-color: darkmagenta;
+    }
+    60%{
+        transform:translate(450px,60px);
+        background-color:forestgreen;
+    }
+    90%{
+        transform:translate(650px,10px);
+        background-color: orange;
+    }
+}

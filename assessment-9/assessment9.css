@@ -1,0 +1,207 @@
+body,html{
+    background-color:gold;
+}
+h1{
+    text-align: center;
+}
+.container{
+    text-align: center;   
+}
+.container2{
+    text-align: center; 
+}
+.box{
+    width:80px;
+    height:80px;
+    border:1px solid white;
+    display:inline-block;    
+}
+.box1{
+    background-color: darkslategrey;
+    margin-top:15px;
+    animation-name: box1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes box1{ 
+    30%{
+        transform:skewX(30deg);
+    }
+    50%{
+        transform:skewX(-30deg);
+    }
+}
+.box1-1{
+    margin-left:50px;
+}
+.box1-2{
+    margin-left:70px;
+}
+.box1-3{
+    margin-left:70px;
+}
+.box2{
+    background-color:indianred;
+    margin-top:20px;
+    animation-name: box2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes box2{ 
+    30%{
+        transform:skewY(30deg);
+    }
+    50%{
+        transform:skewY(-30deg);
+    }
+}
+.box2-1{
+    margin-left:50px;
+}
+.box2-2{
+    margin-left:70px;
+}
+.box2-3{
+    margin-left:70px;
+}
+.box3{
+    background-color:cyan;
+    margin-top:30px;
+    animation-name: box3;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes box3{ 
+    100%{
+        transform:rotate(360deg);
+    }
+}
+.box3-1{
+    margin-left:50px;
+}
+.box3-2{
+    margin-left:70px;
+}
+.box3-3{
+    margin-left:70px;
+}
+.box4{
+    margin-top:30px;
+    animation-name: box4;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.box4-1{
+    background-color:lawngreen;
+    margin-left:50px;
+    animation-name: box4-1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes box4-1{
+    40%{
+        transform:scaleY(2);
+        width:80px;
+        height:20px;
+    }
+    60%{
+        transform:scaleY(2);
+        width:80px;
+        height:20px;
+    }
+}
+.box4-2{
+    background-color:maroon;
+    margin-left:70px;
+    animation-name: box4-2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes box4-2{
+    40%{
+        transform:scaleX(2);
+        
+    }
+    60%{
+        transform:scaleX(2);
+        
+    }
+}
+.box4-3{
+    background-color:mediumblue;
+    margin-left:70px;
+    animation-name: box4-3;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes box4-3{
+    40%{
+        transform:rotate(180deg);
+       
+    }
+    60%{
+        transform:rotate(180deg);
+       
+    }
+}
+.box5{
+    margin-top:60px;
+}
+.boxZ{
+    background-color: mediumseagreen;
+}
+.boxI{
+    transition:width 2s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.boxI:hover{
+    background-color:mediumseagreen;
+    width:200px;
+}
+.boxII{
+    transition:width 2s,height 3s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+.boxII:hover{
+    width:200px;
+    height:200px;
+}
+.boxIII{
+    transition:width 5s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.boxIII:hover{
+    background-color:mediumseagreen;
+    width:200px;
+}
+.boxIV{
+    transition:width 7s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.boxIV:hover{
+    background-color:mediumseagreen;
+    width:200px;
+}
+.boxV{
+    transition:width 6s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.boxV:hover{
+    background-color:mediumseagreen;
+    width:200px;
+}
+.boxVI{
+    text-align: center;
+    margin-top: 30px;
+}
+.boxVII{
+    text-align:center;
+    margin-top:20px;
+}

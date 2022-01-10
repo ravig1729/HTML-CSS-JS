@@ -1,0 +1,59 @@
+body,html{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGYAvf8BC0PnolYapKwkMSIwHH31KGvkFHog&usqp=CAU");
+    background-size: cover;
+    z-index:-10;
+}
+.track {
+    background-image: url("https://ak.picdn.net/shutterstock/videos/5040179/thumb/1.jpg");
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0px;
+    width: 1000vw;
+    height: 70%;
+    animation: trackanimation 6s linear infinite;
+}
+.car {
+    background-image: url("./images__1_-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50rem;
+    height: 17.699rem;
+    position: absolute;
+    bottom: 77px;
+    left: 396px;
+    z-index:2;
+}
+.wheel {
+    position: absolute;
+    animation: wheelanimation linear .6s infinite;
+}
+.wheel1 {
+    background-image: url("./download-removebg-preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 130px;
+    bottom:55px;
+    left: 978px;
+    z-index:5;
+}
+.wheel2 {
+    background-image: url("./download-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 130px;
+    bottom: 55px;
+    left: 530px;
+    z-index:5;
+}
+@keyframes wheelanimation{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes trackanimation {
+    100% {
+        transform: translate(-500vw);
+    }
+}

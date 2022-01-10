@@ -1,0 +1,176 @@
+a{
+    text-decoration: none; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+    color: #4d4a42;
+    cursor:pointer;
+}
+#flex-container-y{
+    width:100%;
+    height:100%;
+    padding-bottom:40px;
+    flex-wrap: wrap;
+    overflow:hidden;
+    float:left;
+    height:480px;  
+    
+}
+.flex-containerI{
+    margin-top:-5%;
+}
+.boxI{
+    font-weight:bolder;
+    font-size:50px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    padding-top:5%;
+    position:relative;
+}
+.heading:before{
+    content:"";
+    display:block;
+    width:120px;
+    height:2px;
+    background:#000;
+    position:absolute;
+    left:23%;
+    top:80%;
+}
+.heading:after{
+    content:"";
+    display:block;
+    width:120px;
+    height:2px;
+    background:#000;
+    position:absolute;
+    right:22%;
+    top:80%;
+}
+.boxII{
+    font-size:x-large;
+    color:#4d4a42;
+    cursor:pointer;
+    margin-left: 45%;
+    margin-top:3%;
+}
+.boxIII{
+    border:2px solid red;
+    border-radius:10px;
+    width:300px;
+    height: 300px;
+    margin-top: 40px;
+    box-shadow: 8px 8px 0px lightgrey;
+    flex-wrap: wrap;
+}
+.box4-I{
+    color:red;
+    border-bottom: 2px solid black;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-right:120px;
+    margin-left: 70px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-wrap: wrap;
+}
+.box4-II{
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: line-through;
+    text-decoration-color: 2px solid red;
+    padding-top:40px;
+    /* padding-left: 60px; */
+    padding-right:35px ;
+    color:red;
+    flex-wrap: wrap;
+}
+.box4-III{
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 10px;
+    padding-left:10px;
+    padding-right: 100px;
+    position:relative;
+    right:33px;
+    flex-wrap: wrap;
+}
+.box4-IV{
+    padding-top: 35%;
+    padding-left:88%;
+    cursor:pointer;
+}
+.footmiddle{
+    margin-top:5%;
+}
+@media screen and (min-width:100px) and (max-width:450px) {
+    /* moto g */
+    .boxI{
+        font-weight:bolder;
+        font-size:30px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-top:8%;
+        position:relative;
+        margin-left: 20px;
+    }
+    .heading:before{   
+        display:none;   
+    }
+    .heading:after{   
+        display:none;
+    }
+    .boxII{
+        font-size:x-large;
+        color:#4d4a42;
+        margin-left:13%;
+        margin-top:-35px;
+    }
+    .back{
+        display:none;
+        cursor:pointer;
+    }
+    .boxIII{
+        border:1px solid red;
+        border-radius:10px;
+        width:230px;
+        height: 300px;
+        margin-top: 40px;
+        box-shadow: 5px 5px 2px lightgrey;
+    }.box4-I{
+        color:red;
+        border-bottom: 2px solid black;
+        position:relative;
+        top:5px;
+        bottom:15px;
+        padding-right:66px;
+        margin-left: 40px;
+        font-size: 20px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .box4-II{
+        font-size:20px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: line-through;
+        text-decoration-color: 2px solid red;
+        padding-top:30px;
+        position:relative;
+        left:20px;
+        color:red;
+        
+    }
+    .box4-III{
+        font-size: 20px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding-top: 10px;
+        padding-right:30px;
+        display:flex;
+        position:relative;
+        left:0.5px;
+    }
+    .box4-IV{
+        padding-top: 35%;
+        padding-left:80%;
+        cursor:pointer;
+    }
+    .footmiddle{
+        margin-top:5%;
+    }
+}

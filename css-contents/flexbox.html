@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* align-content: center; */
+            height: 250px;
+        }
+        .flexbox-item {
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+    </style>
+<body>
+    <div class="flex-container">
+        <div class="flexbox-item">box1</div>
+        <div class="flexbox-item">box2</div>
+        <div class="flexbox-item">box3</div>
+    </div>
+</body>
+</html>
+<style>
+    .flex-container {
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        height: 500px;
+        /* flex-direction: colummn/row; */
+    }
+    .flexbox-item {
+        border: 2px solid black;
+        width: 200px;
+        height: 100px;
+        margin: 5px;
+    }
+    .flexbox-item1 {
+        /* flex-grow: 2; */
+        flex-shrink: 1;
+        order: 2;
+    }
+    .flexbox-item2 {
+        order: 3;
+        /* flex-grow: 1; */
+        flex-shrink: 2;
+    }
+</style>
+</head>
+<body>
+<div class="flex-container">
+    <div class="flexbox-item flexbox-item1">box1</div>
+    <div class="flexbox-item flexbox-item2">box2</div>
+    <div class="flexbox-item flexbox-item2">box3</div>
+</div>
+</body>

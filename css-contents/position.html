@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border:2px solid red;
+            display:inline-block;
+            height:100px;
+            width:100px;
+            background-color:blanchedalmond
+        }
+        .box1{
+            background-color: yellow;
+            position:sticky;           
+            /* margin-left: 35px;*/
+            top:50px;
+            left:0px;
+        }
+        .box2{
+            /* position:fixed;
+            top:100px; */
+            z-index:1;
+            background-color:orange;
+            /* position:absolute; */
+            right:20px;
+            left:250px;
+           
+        }
+        /* .box3{
+        position:relative;
+        bottom:30px;
+        background-color:khaki;
+        z-index:2;
+        }
+        .box4{
+        background-color: brown;
+        position:relative;
+        bottom :70px;
+        z-index:1;
+        }
+        .container{
+        height:1000px;
+        width:500px;
+        background-color:pink;
+        }
+        img{
+        filter:contrast();
+        filter:greyscale();
+        filter:brightness();
+        filter:invert();
+        filter:opacity();
+        filter:saturate();
+        filter:sepia();
+        filter:blur(in px);
+        filter:hue-rotate(in degrees);
+        } */
+    </style>
+<body>
+    <div class="container">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+    </div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTK500IQ_2NpiNk7Ed_4phbWDtLSZ7QGWuNA&usqp=CAU" alt="baby">
+</body>
+</html>
+<!-- .box {
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+}
+.box1 {
+    background-color: yellow;
+}
+.box2 {
+    position: relative;
+    z-index: -1;
+    top: 100px;
+    background-color: orange;
+}
+.box3 {
+    position: relative;
+    /* visibility: hidden/visible/collapse; */
+    z-index: -2;
+    top: 60px;
+    /* bottom: 30px;  */
+    background-color: khaki;
+}
+.box4 {
+    position: relative;
+    z-index: 1;
+    bottom: 70px;
+    background-color: cyan;
+} -->

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList-UX</title>
+    <style>
+        #header{
+            display:flex;
+            border:1px solid black;
+            height:30px;
+            position:sticky;
+            top:0px;
+            left:0px;
+            margin-top:0px;
+        }
+        .headleft{
+            color:#4d4a42;
+            cursor:pointer;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .headright{
+            color:#4d4a42;
+            cursor:pointer;
+            margin-left: 63%;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        a{
+            text-decoration: none; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+            color: #4d4a42;
+            cursor:pointer;
+        }
+        .boxz{
+            color:red;
+            cursor:pointer;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+        }
+        #flex-container-x{
+            border:1px solid black;
+            width:1212px;
+            padding-bottom:40px;
+            flex-wrap: wrap;
+            overflow:hidden;
+            float:left;
+            /* filter:blur(5px); */
+        }
+        .flex-container1{
+            border:0;
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .box1{
+            font-size:50px;
+            position:relative;
+            top:90px;
+            left:260px;
+            flex-wrap: wrap;
+        }
+        .box2{
+            visibility:hidden;
+            width:45%;
+            flex-wrap: wrap;
+        }
+        .box3{
+            position:relative;
+            top: 120px;
+            left:6%;
+            font-size:150%;
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .flex-container2{
+            display:flex;
+            margin-top:10%;
+            margin-left:20%;
+            flex-wrap: wrap;
+        }
+        .box4{
+            border:2px solid red;
+            border-radius:10px;
+            width:200px;
+            height: 300px;
+            box-shadow: 8px 8px 0px lightgrey;
+            flex-wrap: wrap;
+        }
+        .box4-1{
+            color:red;
+            border-bottom: 2px solid black;
+            padding-top: 30px;
+            padding-bottom: 15px;
+            margin-left: 20px;
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            flex-wrap: wrap;
+        }
+        .box4-2{
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-decoration: line-through;
+            text-decoration-color: 2px solid red;
+            padding-top:40px;
+            padding-left: 20px;
+            color:red;
+            flex-wrap: wrap;
+        }
+        .box4-3{
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding-top: 10px;
+            flex-wrap: wrap;
+        }
+        .box5{
+            border:2px solid red;
+            border-radius:10px;
+            width:200px;
+            height: 300px;
+            margin-left: 60px;
+            box-shadow: 8px 8px 0px lightgrey;
+            flex-wrap: wrap;
+        }
+        .box5-1{
+            color:red;
+            border-bottom: 2px solid black;
+            padding-top: 30px;
+            padding-bottom: 15px;
+            margin-left: 20px;
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            flex-wrap: wrap;
+        }
+        .box5-2{
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-decoration: line-through;
+            text-decoration-color: 2px solid red;
+            padding-top:40px;
+            padding-left: 20px;
+            color:red;
+            flex-wrap: wrap;
+        }
+        .box5-3{
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding-top: 10px;
+            flex-wrap: wrap;
+        }
+        .box6{
+            border:2px solid red;
+            border-radius:10px;
+            width:200px;
+            height: 300px;
+            margin-left: 60px;
+            box-shadow: 8px 8px 0px lightgrey;
+            flex-wrap: wrap;
+        }
+        .box6-1{
+            color:red;
+            border-bottom: 2px solid black;
+            padding-top: 30px;
+            padding-bottom: 15px;
+            margin-left: 20px;
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            flex-wrap: wrap;
+        }
+        .box6-2{
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-decoration: line-through;
+            text-decoration-color: 2px solid red;
+            padding-top:40px;
+            padding-left: 20px;
+            color:red;
+            flex-wrap: wrap;
+        }
+        .box6-3{
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding-top: 10px;
+            flex-wrap: wrap;
+        }
+        #side{
+            margin-top:-50px;
+            margin-left:96%;
+            padding-left:15px;
+            border:1px solid black;
+            position:sticky;
+            padding-bottom:41.5%;
+            padding-top:20px;
+            margin-top:-0.6px;
+            box-sizing:border-box;
+        }
+        #footer{
+            position:sticky;
+            width:1212.3px;
+            height:27px;
+            margin-top:-29px;
+            display: flex;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .footstart{
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color:#4d4a42;
+            cursor:pointer;  
+        }
+        .footmiddle{
+            position:sticky;
+            border:0px solid white;
+            padding-left:400px;
+        }
+    </style>
+<script src="https://kit.fontawesome.com/58098877f2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="headleft">
+            &nbsp <i style="color:#4d4a42;cursor:pointer"class="fas fa-th-large"></i>  TodoList-UX> <b>Todo &nbsp| Home - 1366</b>
+        </div>
+        <div class="headright">
+            <label for="field"></label>
+            <select name="course" id="">
+                <option value="Default">Default</option>
+                <option value="25%">25%</option>
+                <option value="50%">50%</option>
+                <option value="75%">75%</option>
+                <option value="100%">100%</option>
+                <option value="150%">150%</option>
+                <option value="200%">200%</option>
+            </select>
+            <i class="fas fa-expand-alt"></i>
+            <i class="fas fa-question-circle"></i>
+            <a href="https://auth.services.adobe.com/en_US/index.html?callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2FCCHomeWeb1%2FAdobeID%2Ftoken%3Fredirect_uri%3Dhttps%253A%252F%252Fcreativecloud.adobe.com%252Fcc%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26code_challenge_method%3Dplain%26use_ms_for_expiry%3Dtrue&client_id=CCHomeWeb1&scope=AdobeID%2Copenid%2Cgnav%2Ccreative_cloud%2Cread_organizations%2Ccreative_sdk%2Cadditional_info.optionalAgreements%2Cadditional_info.screen_name%2Cadditional_info.roles%2Csao.ccprivate%2Ctk_platform%2Cpiip_read&denied_callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fdenied%2FCCHomeWeb1%3Fredirect_uri%3Dhttps%253A%252F%252Fcreativecloud.adobe.com%252Fcc%2523from_ims%253Dtrue%2526old_hash%253D%2526api%253Dauthorize%26response_type%3Dtoken&relay=394792d0-af3e-4c8c-a781-430401abe083&locale=en_US&flow_type=token&idp_flow_type=login&ab_test=signup-social-round#/" target="_blank">Sign in</a>
+        </div>
+    </div>
+    <div class=header2>
+            <div id="flex-container-x">
+                <div class="flex-container">
+                <div class="flex-container1">
+                    <div class="box1">
+                        <span><b>Tasks</b></span>
+                        <span style="font-weight:lighter;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color:#4d4a42">Lists</span>
+                    </div>
+                    <div class="box2"></div>
+                    <div class="box3">
+                        <a href="3.project2_2.html"><i style="color:red"class="fas fa-plus-circle"></i></a>
+                        <div style="color:#4d4a42;cursor:pointer">Add List</div>
+                    </div>
+                </div>
+                <div class="flex-container2">
+                    <div class="box4">
+                        <div class="box4-1"><a class="boxz" href="2.project2II.html" target="_blank"> Trip to Paris</a></div>
+                        <div class="box4-2">Completed Task</div>
+                        <div class="box4-3">
+                            <input type="checkbox"name="Check"id="check"/>
+                            <label for="check">Pending Task</label>
+                        </div>
+                    </div>
+                    <div class="box5">
+                        <div class="box5-1">My Todo List</div>
+                        <div class="box5-2">Completed Task</div>
+                        <div class="box5-3">
+                            <input type="checkbox"name="Check"id="check"/>
+                            <label for="check">Pending Task</label>
+                        </div>
+                    </div>
+                    <div class="box6">
+                        <div class="box6-1">My Todo List</div>
+                        <div class="box6-2">Completed Task</div>
+                        <div class="box6-3">
+                            <input type="checkbox"name="Check"id="check"/>
+                            <label for="check">Pending Task</label>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div> 
+            <div id="side">
+                <i style="color:#4d4a42;cursor:pointer"class="fas fa-comment-alt"></i>
+            </div>
+    </div>
+    <div id="footer">
+        <div class="footstart">
+            <a href="https://www.adobe.com/products/xd.html?sdid=YXPZG4ZY&mv=other" target="_blank">Made with Adobe XD &nbsp  <i class="fas fa-link"></i></a>
+        </div><center>
+        <div class="footmiddle">
+            <a href="1.project2I.html"> <i style="color:#4d4a42;cursor:pointer"class="fas fa-home"></i></a> &nbsp  < &nbsp  1 of 4 &nbsp>
+        </div></center>
+    </div>
+</body>
+</html>
