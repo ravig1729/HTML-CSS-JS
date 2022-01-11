@@ -65,7 +65,7 @@
 //     console.log("B");
 // }
 
-// add();    //hey  B.
+// add();    //B  hey.
 
 //setTimeout:Web api function,it doesnot executed directly by using java-script engine,its get executed using event loop.
 //..this function will be sent to the callback queue.
